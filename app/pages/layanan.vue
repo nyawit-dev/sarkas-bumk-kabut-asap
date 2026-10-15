@@ -33,7 +33,7 @@ const services = [
       { k: 'Kuota', v: '40 orang/hari' },
       { k: 'Jaminan', v: 'Matahari terbit atau uang kembali*' },
     ],
-    image: base + '/img/hero-haze.svg',
+    image: base + '/img/foto/hero.jpg',
     imageAlt: 'Pemandangan desa dan bukit saat matahari terbit diterpa kabut',
   },
   {
@@ -63,7 +63,7 @@ const services = [
       { k: 'Anggaran', v: 'Menunggu prioritas' },
       { k: 'Target', v: '2031' },
     ],
-    image: base + '/img/spbu-queue.svg',
+    image: base + '/img/foto/queue.jpg',
     imageAlt: 'Warga Desa Konoha mengantre di SPBU di tengah kabut tebal',
   },
 ]

@@ -93,7 +93,7 @@ const base = '/sarkas-bumk-kabut-asap'
     <UCard class="mt-6">
       <div class="grid md:grid-cols-2 gap-6 items-center">
         <img
-          :src="base + '/img/galeri-dokumen.svg'"
+          :src="base + '/img/foto/calendar.jpg'"
           alt="Tumpukan laporan tahunan dan berkas audit berstempel ditolak"
           width="1600"
           height="900"

@@ -96,7 +96,7 @@ const base = '/sarkas-bumk-kabut-asap'
           </div>
           <div class="relative">
             <img
-              :src="base + '/img/hero-haze.svg'"
+              :src="base + '/img/foto/hero.jpg'"
               alt="Desa Konoha diterja kabut tebal, sawah dan langitan samar terlihat"
               width="1600"
               height="900"

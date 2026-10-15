@@ -119,7 +119,7 @@ const org = [
         </UCard>
         <UCard>
           <img
-            :src="base + '/img/hero-haze.svg'"
+            :src="base + '/img/foto/hero.jpg'"
             alt="Pemandangan Desa Konoha diterja kabut"
             width="1600"
             height="900"
@@ -130,7 +130,7 @@ const org = [
         </UCard>
         <UCard>
           <img
-            :src="base + '/img/galeri-kantor.svg'"
+            :src="base + '/img/foto/office.jpg'"
             alt="Kantor pusat PT KAW N"
             width="1600"
             height="900"
@@ -141,7 +141,7 @@ const org = [
         </UCard>
         <UCard>
           <img
-            :src="base + '/img/galeri-karyawan.svg'"
+            :src="base + '/img/foto/meeting.jpg'"
             alt="Karyawan PT KAW N di kantor"
             width="1600"
             height="900"
@@ -152,7 +152,7 @@ const org = [
         </UCard>
         <UCard>
           <img
-            :src="base + '/img/galeri-stasiun-udara.svg'"
+            :src="base + '/img/foto/airmonitor.jpg'"
             alt="Stasiun pemantau kualitas udara"
             width="1600"
             height="900"
