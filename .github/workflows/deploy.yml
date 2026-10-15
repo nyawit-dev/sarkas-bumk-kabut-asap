@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+# Builds the static site with bun and publishes it to GitHub Pages. Pushes to
+# main deploy; the same job runs on pull requests to prove the build is green
+# before merge, without deploying.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # The cache lives outside the repo on this machine, so CI installs from
+      # the lockfile only. A lockfile mismatch fails the build rather than
+      # silently resolving a different tree.
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Generate static site
+        run: bun run generate
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .output/public
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

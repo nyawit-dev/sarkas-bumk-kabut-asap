@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/sarkas-bumk-kabut-asap/fonts/nunito-variable-latin.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Nunito', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* Kabut: situs ini soal udara yang tampak bersih tapi berwarna. Gradien
+   asap lembut, bukan hujan abu pekat — satire yang terlalu gelap berhenti
+   lucu dan mulai terlihat seperti tuduhan. */
+.sarkas-hero {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--ui-primary) 12%, var(--ui-bg)) 0%,
+      var(--ui-bg) 100%
+    ),
+    radial-gradient(
+      120% 80% at 70% 0%,
+      color-mix(in oklab, var(--ui-primary) 8%, transparent),
+      transparent 60%
+    );
+}
+
+/* Pita statistik: angka self-reported, bukan fakta tersumber. Diberi
+   garis bawah putus-putus supaya terbaca sebagai klaim, bukan data. */
+.sarkas-claim {
+  border-bottom: 1px dashed color-mix(in oklab, var(--ui-text-muted) 50%, transparent);
+}
