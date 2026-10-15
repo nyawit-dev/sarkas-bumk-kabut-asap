@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Balai desa tempat rapat warga diadakan">
+  <rect width="1600" height="900" fill="#d0c8b4"/>
+  <!-- langit -->
+  <rect y="0" width="1600" height="620" fill="#c2a878"/>
+  <!-- balai desa -->
+  <rect x="400" y="260" width="800" height="360" fill="#e8e2d2"/>
+  <rect x="400" y="260" width="800" height="360" fill="none" stroke="#8a8272" stroke-width="6"/>
+  <!-- atap panggung khas -->
+  <polygon points="340,270 800,140 1260,270" fill="#5a4632"/>
+  <polygon points="380,270 800,170 1220,270" fill="#6b5738"/>
+  <!-- papan nama -->
+  <rect x="620" y="300" width="360" height="70" rx="8" fill="#1f7a45"/>
+  <text x="800" y="348" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="32" fill="#f2ede0">BALAI DESA</text>
+  <!-- panggung -->
+  <rect x="430" y="470" width="740" height="150" fill="#9c7f5c"/>
+  <rect x="430" y="470" width="740" height="20" fill="#8a6f4e"/>
+  <!-- kursi rapat di panggung -->
+  <g fill="#3a3128">
+    <rect x="470" y="430" width="60" height="46" rx="6"/><rect x="560" y="430" width="60" height="46" rx="6"/><rect x="650" y="430" width="60" height="46" rx="6"/>
+    <rect x="890" y="430" width="60" height="46" rx="6"/><rect x="980" y="430" width="60" height="46" rx="6"/><rect x="1070" y="430" width="60" height="46" rx="6"/>
+  </g>
+  <!-- meja pimpinan -->
+  <rect x="700" y="480" width="200" height="60" rx="6" fill="#4a3c28"/>
+  <!-- mikrofon -->
+  <line x1="800" y1="480" x2="800" y2="430" stroke="#2c2a26" stroke-width="5"/>
+  <ellipse cx="800" cy="424" rx="11" ry="16" fill="#2c2a26"/>
+  <!-- kursi hadirin kosong -->
+  <g fill="#3a3128">
+    <rect x="200" y="680" width="70" height="60" rx="6"/><rect x="300" y="680" width="70" height="60" rx="6"/>
+    <rect x="400" y="680" width="70" height="60" rx="6"/><rect x="500" y="680" width="70" height="60" rx="6"/>
+    <rect x="600" y="680" width="70" height="60" rx="6"/><rect x="700" y="680" width="70" height="60" rx="6"/>
+    <rect x="800" y="680" width="70" height="60" rx="6"/><rect x="900" y="680" width="70" height="60" rx="6"/>
+    <rect x="1000" y="680" width="70" height="60" rx="6"/><rect x="1100" y="680" width="70" height="60" rx="6"/>
+    <rect x="1200" y="680" width="70" height="60" rx="6"/><rect x="1300" y="680" width="70" height="60" rx="6"/>
+  </g>
+  <!-- spanduk -->
+  <rect x="350" y="680" width="900" height="50" rx="6" fill="#f2ede0"/>
+  <text x="800" y="714" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#134a2b">RAPAT WARGA — DIJADWALKAN ULANG</text>
+  <!-- tanah -->
+  <rect y="740" width="1600" height="160" fill="#7a7256"/>
+</svg>

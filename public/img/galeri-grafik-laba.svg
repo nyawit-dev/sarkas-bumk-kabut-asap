@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Grafik pertumbuhan laba PT KAW N yang terus naik">
+  <rect width="1600" height="900" fill="#f7f4ea"/>
+  <!-- judul grafik -->
+  <text x="800" y="90" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="40" fill="#134a2b">PERTUMBUHAN LABA (KLAIM INTERNAL)</text>
+  <text x="800" y="125" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#8a8272">Dalam miliar Rupiah · belum diaudit</text>
+  <!-- sumbu -->
+  <line x1="200" y1="760" x2="1480" y2="760" stroke="#5a5346" stroke-width="3"/>
+  <line x1="200" y1="760" x2="200" y2="180" stroke="#5a5346" stroke-width="3"/>
+  <!-- gridline -->
+  <g stroke="#c4bda9" stroke-width="1.5" stroke-dasharray="6 6">
+    <line x1="200" y1="620" x2="1480" y2="620"/>
+    <line x1="200" y1="480" x2="1480" y2="480"/>
+    <line x1="200" y1="340" x2="1480" y2="340"/>
+    <line x1="200" y1="220" x2="1480" y2="220"/>
+  </g>
+  <!-- label sumbu Y -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="18" fill="#5a5346" text-anchor="end">
+    <text x="180" y="768">0</text>
+    <text x="180" y="628">5</text>
+    <text x="180" y="488">10</text>
+    <text x="180" y="348">15</text>
+    <text x="180" y="228">20</text>
+  </g>
+  <!-- batang laba -->
+  <g>
+    <rect x="280" y="700" width="120" height="60" fill="#1f7a45"/>
+    <rect x="480" y="620" width="120" height="140" fill="#1f7a45"/>
+    <rect x="680" y="540" width="120" height="220" fill="#1f7a45"/>
+    <rect x="880" y="450" width="120" height="310" fill="#1f7a45"/>
+    <rect x="1080" y="350" width="120" height="410" fill="#1f7a45"/>
+  </g>
+  <!-- nilai di atas batang -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="20" font-weight="bold" fill="#134a2b" text-anchor="middle">
+    <text x="340" y="690">2,1</text>
+    <text x="540" y="610">6,4</text>
+    <text x="740" y="530">11,3</text>
+    <text x="940" y="440">18,9</text>
+    <text x="1140" y="340">27,2</text>
+  </g>
+  <!-- label tahun -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#5a5346" text-anchor="middle">
+    <text x="340" y="795">2021</text>
+    <text x="540" y="795">2022</text>
+    <text x="740" y="795">2023</text>
+    <text x="940" y="795">2024</text>
+    <text x="1140" y="795">2025</text>
+  </g>
+  <!-- garis tren -->
+  <path d="M340 700 L540 620 L740 540 L940 450 L1140 350" fill="none" stroke="#e0a83c" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <!-- catatan -->
+  <text x="800" y="860" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#b3352b">*Tiga permintaan audit independen ditolak sepanjang periode ini.</text>
+</svg>

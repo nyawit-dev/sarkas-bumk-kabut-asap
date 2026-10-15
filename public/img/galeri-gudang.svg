@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Gudang penyimpanan kaleng udara bertumpuk rapi">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8f8878"/>
+      <stop offset="1" stop-color="#6e6858"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#d8d2c4"/>
+  <!-- dinding belakang -->
+  <rect x="100" y="100" width="1400" height="560" fill="#c4bda9"/>
+  <!-- atap rangka -->
+  <g stroke="#8a8272" stroke-width="6" opacity=".7">
+    <line x1="100" y1="100" x2="1500" y2="100"/>
+    <path d="M100 100 L800 20 L1500 100" fill="none"/>
+    <line x1="400" y1="100" x2="400" y2="50"/><line x1="800" y1="100" x2="800" y2="30"/><line x1="1200" y1="100" x2="1200" y2="50"/>
+  </g>
+  <!-- rak kaleng -->
+  <g>
+    <!-- tumpukan 1 -->
+    <g transform="translate(220 420)">
+      <rect x="0" y="180" width="240" height="16" fill="#6b5738"/>
+      <g>
+        <rect x="10" y="110" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="10" y="130" width="34" height="30" fill="#1f7a45"/><ellipse cx="27" cy="110" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="56" y="110" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="56" y="130" width="34" height="30" fill="#1f7a45"/><ellipse cx="73" cy="110" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="102" y="110" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="102" y="130" width="34" height="30" fill="#1f7a45"/><ellipse cx="119" cy="110" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="148" y="110" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="148" y="130" width="34" height="30" fill="#1f7a45"/><ellipse cx="165" cy="110" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="194" y="110" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="194" y="130" width="34" height="30" fill="#1f7a45"/><ellipse cx="211" cy="110" rx="17" ry="6" fill="#dfe3e5"/>
+      </g>
+      <g>
+        <rect x="10" y="30" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="10" y="50" width="34" height="30" fill="#1f7a45"/><ellipse cx="27" cy="30" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="56" y="30" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="56" y="50" width="34" height="30" fill="#1f7a45"/><ellipse cx="73" cy="30" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="102" y="30" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="102" y="50" width="34" height="30" fill="#1f7a45"/><ellipse cx="119" cy="30" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="148" y="30" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="148" y="50" width="34" height="30" fill="#1f7a45"/><ellipse cx="165" cy="30" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="194" y="30" width="34" height="70" rx="5" fill="#c6cacd"/><rect x="194" y="50" width="34" height="30" fill="#1f7a45"/><ellipse cx="211" cy="30" rx="17" ry="6" fill="#dfe3e5"/>
+      </g>
+    </g>
+    <!-- tumpukan 2 -->
+    <g transform="translate(620 440)">
+      <rect x="0" y="160" width="240" height="16" fill="#6b5738"/>
+      <g>
+        <rect x="10" y="95" width="34" height="65" rx="5" fill="#c6cacd"/><rect x="10" y="112" width="34" height="28" fill="#1f7a45"/><ellipse cx="27" cy="95" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="56" y="95" width="34" height="65" rx="5" fill="#c6cacd"/><rect x="56" y="112" width="34" height="28" fill="#1f7a45"/><ellipse cx="73" cy="95" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="102" y="95" width="34" height="65" rx="5" fill="#c6cacd"/><rect x="102" y="112" width="34" height="28" fill="#1f7a45"/><ellipse cx="119" cy="95" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="148" y="95" width="34" height="65" rx="5" fill="#c6cacd"/><rect x="148" y="112" width="34" height="28" fill="#1f7a45"/><ellipse cx="165" cy="95" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="194" y="95" width="34" height="65" rx="5" fill="#c6cacd"/><rect x="194" y="112" width="34" height="28" fill="#1f7a45"/><ellipse cx="211" cy="95" rx="17" ry="6" fill="#dfe3e5"/>
+      </g>
+    </g>
+    <!-- tumpukan 3 -->
+    <g transform="translate(1020 460)">
+      <rect x="0" y="140" width="240" height="16" fill="#6b5738"/>
+      <g>
+        <rect x="10" y="80" width="34" height="60" rx="5" fill="#c6cacd"/><rect x="10" y="96" width="34" height="26" fill="#1f7a45"/><ellipse cx="27" cy="80" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="56" y="80" width="34" height="60" rx="5" fill="#c6cacd"/><rect x="56" y="96" width="34" height="26" fill="#1f7a45"/><ellipse cx="73" cy="80" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="102" y="80" width="34" height="60" rx="5" fill="#c6cacd"/><rect x="102" y="96" width="34" height="26" fill="#1f7a45"/><ellipse cx="119" cy="80" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="148" y="80" width="34" height="60" rx="5" fill="#c6cacd"/><rect x="148" y="96" width="34" height="26" fill="#1f7a45"/><ellipse cx="165" cy="80" rx="17" ry="6" fill="#dfe3e5"/>
+        <rect x="194" y="80" width="34" height="60" rx="5" fill="#c6cacd"/><rect x="194" y="96" width="34" height="26" fill="#1f7a45"/><ellipse cx="211" cy="80" rx="17" ry="6" fill="#dfe3e5"/>
+      </g>
+    </g>
+  </g>
+  <rect y="660" width="1600" height="240" fill="url(#floor)"/>
+  <line x1="0" y1="780" x2="1600" y2="780" stroke="#5a5346" stroke-width="2" opacity=".6"/>
+</svg>

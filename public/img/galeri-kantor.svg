@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Kantor desa tempat PT KAW N beroperasi di bawah kabut">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c5a878"/>
+      <stop offset="1" stop-color="#a08a68"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- gedung utama -->
+  <g>
+    <rect x="480" y="280" width="640" height="360" fill="#e8e2d2"/>
+    <rect x="480" y="280" width="640" height="360" fill="none" stroke="#8a8272" stroke-width="6"/>
+    <!-- atap -->
+    <polygon points="440,280 800,160 1160,280" fill="#5a4632"/>
+    <polygon points="440,280 800,160 1160,280" fill="none" stroke="#4a3a28" stroke-width="5"/>
+    <!-- papan nama -->
+    <rect x="600" y="330" width="400" height="80" rx="8" fill="#1f7a45"/>
+    <text x="800" y="382" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="36" fill="#f2ede0">KANTOR PT KAW N</text>
+    <!-- jendela -->
+    <g fill="#c9d8dd" stroke="#8a8272" stroke-width="4">
+      <rect x="530" y="450" width="120" height="90"/>
+      <rect x="690" y="450" width="120" height="90"/>
+      <rect x="850" y="450" width="120" height="90"/>
+      <rect x="1010" y="450" width="90" height="90"/>
+    </g>
+    <!-- pintu -->
+    <rect x="740" y="560" width="120" height="80" fill="#4a3c28"/>
+    <circle cx="846" cy="600" r="5" fill="#c9b184"/>
+  </g>
+  <!-- pohon -->
+  <g fill="#6f6149" opacity=".8">
+    <rect x="330" y="560" width="24" height="80"/>
+    <circle cx="342" cy="540" r="60"/>
+    <rect x="1240" y="560" width="24" height="80"/>
+    <circle cx="1252" cy="540" r="56"/>
+  </g>
+  <!-- tanah -->
+  <rect y="640" width="1600" height="260" fill="#7a7256"/>
+  <!-- jalan masuk -->
+  <path d="M700 640 L600 900 L1000 900 L900 640 Z" fill="#57534c"/>
+  <!-- kabut menutupi bagian bawah gedung -->
+  <rect y="560" width="1600" height="340" fill="#7d6a50" opacity=".45"/>
+  <ellipse cx="800" cy="660" rx="800" ry="60" fill="#99866b" opacity=".5"/>
+</svg>

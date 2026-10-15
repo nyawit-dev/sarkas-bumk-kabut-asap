@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Warung desa menata kaleng udara untuk dijual">
+  <rect width="1600" height="900" fill="#d8d2c4"/>
+  <!-- dinding warung -->
+  <rect y="0" width="1600" height="620" fill="#c4bda9"/>
+  <!-- atap -->
+  <polygon points="-40,140 800,20 1640,140 L1640,220 L-40,220" fill="#5a4632"/>
+  <!-- papan nama warung -->
+  <rect x="520" y="60" width="560" height="90" rx="10" fill="#1f7a45"/>
+  <text x="800" y="120" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="44" fill="#f2ede0">WARUNG DESA</text>
+  <!-- meja display -->
+  <rect x="300" y="480" width="1000" height="30" rx="6" fill="#8a8272"/>
+  <rect x="320" y="510" width="960" height="140" fill="#9c7f5c"/>
+  <g stroke="#87693f" stroke-width="2" opacity=".5">
+    <line x1="620" y1="510" x2="620" y2="650"/><line x1="920" y1="510" x2="920" y2="650"/>
+  </g>
+  <!-- kaleng ditata -->
+  <g>
+    <g transform="translate(360 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(430 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(500 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(640 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(710 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(780 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(950 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(1020 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(1090 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+    <g transform="translate(1160 400)">
+      <rect x="0" y="30" width="44" height="80" rx="6" fill="#c6cacd"/><rect x="0" y="54" width="44" height="34" fill="#1f7a45"/><ellipse cx="22" cy="30" rx="22" ry="7" fill="#dfe3e5"/>
+    </g>
+  </g>
+  <!-- papan harga -->
+  <g transform="translate(1180 300) rotate(4)">
+    <rect x="0" y="0" width="220" height="120" rx="8" fill="#f2ede0" stroke="#8a8272" stroke-width="3"/>
+    <text x="110" y="40" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#5a5346">UDARA KALENG</text>
+    <text x="110" y="80" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="30" fill="#b3352b">Rp 12.500</text>
+    <text x="110" y="105" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8a8272">harga naik bila kabut tebal</text>
+  </g>
+  <!-- penjual -->
+  <g fill="#2c2a26">
+    <g transform="translate(240 380)"><circle cx="20" cy="20" r="19"/><path d="M4 44 L36 44 L44 120 L-4 120 Z"/></g>
+  </g>
+  <!-- pembeli -->
+  <g fill="#3e382c">
+    <g transform="translate(1300 420)"><circle cx="18" cy="18" r="17"/><path d="M2 40 L34 40 L40 110 L-4 110 Z"/></g>
+  </g>
+  <rect y="650" width="1600" height="250" fill="#9c8f74"/>
+</svg>

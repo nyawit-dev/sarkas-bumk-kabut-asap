@@ -3,6 +3,8 @@ useHead({
   title: 'Layanan — PT Kabut Asap & Wisata Napas',
 })
 
+const base = '/sarkas-bumk-kabut-asap'
+
 const services = [
   {
     icon: 'i-lucide-wind',
@@ -10,6 +12,14 @@ const services = [
     desc: 'Udara desa dikemas ke dalam kaleng 400ml dengan label premium. Stok terbatas mengikuti jadwal kabut.',
     price: 'Mulai Rp 12.500',
     features: ['Kaleng aluminium daur ulang*', 'Sertifikat keaslian desa', 'Tanpa pengawet'],
+    specs: [
+      { k: 'Volume', v: '400 ml' },
+      { k: 'Kandungan', v: 'Udara desa 99,9%*' },
+      { k: 'Umur simpan', v: 'Sampai kabut turun lagi' },
+      { k: 'Sertifikasi', v: 'Label bergaransi desa' },
+    ],
+    image: base + '/img/kaleng-udara.svg',
+    imageAlt: 'Kaleng udara kemasan premium merek Desa Konoha',
   },
   {
     icon: 'i-lucide-mountain-snow',
@@ -17,6 +27,14 @@ const services = [
     desc: 'Paket wisata melihat matahari terbit dari titik tertinggi desa. Termasuk transportasi, pemandu, dan selimut.',
     price: 'Mulai Rp 890.000',
     features: ['Jadwal subuh', 'Pemandu bersertifikat', 'Opsi camping'],
+    specs: [
+      { k: 'Titik kumpul', v: 'Pukul 03.00 WIB' },
+      { k: 'Durasi', v: '4–6 jam (tergantung jarak pandang)' },
+      { k: 'Kuota', v: '40 orang/hari' },
+      { k: 'Jaminan', v: 'Matahari terbit atau uang kembali*' },
+    ],
+    image: base + '/img/hero-haze.svg',
+    imageAlt: 'Pemandangan desa dan bukit saat matahari terbit diterpa kabut',
   },
   {
     icon: 'i-lucide-plane',
@@ -24,6 +42,14 @@ const services = [
     desc: 'Fasilitas rapat darurat di luar negeri untuk pengurus. Termasuk akomodasi bintang lima dan penerbangan langsung.',
     price: 'Rp 43.000.000/malam',
     features: ['Akses lounge bandara', 'Penerbangan pagi hari', 'Bebas jadwal kabut'],
+    specs: [
+      { k: 'Peserta', v: 'Maks. 8 pengurus' },
+      { k: 'Agenda', v: 'Evaluasi kabut + kerja sama' },
+      { k: 'Termasuk', v: 'Kamar, sarapan, penerbangan' },
+      { k: 'Frekuensi', v: 'Sesuai kebutuhan kabut' },
+    ],
+    image: base + '/img/lambang.svg',
+    imageAlt: 'Lambang resmi PT KAW N',
   },
   {
     icon: 'i-lucide-sprout',
@@ -31,6 +57,33 @@ const services = [
     desc: 'Program penggantian napas untuk warga terdampak. Tahap perencanaan; pelaksanaan menunggu anggaran berikutnya.',
     price: 'Rp 0 (rencana)',
     features: ['Kuesioner kesehatan', 'Rujukan rumah sakit', 'Estimasi pelaksanaan: 2031'],
+    specs: [
+      { k: 'Sasaran', v: 'Seluruh warga terdampak' },
+      { k: 'Status', v: 'Perencanaan' },
+      { k: 'Anggaran', v: 'Menunggu prioritas' },
+      { k: 'Target', v: '2031' },
+    ],
+    image: base + '/img/spbu-queue.svg',
+    imageAlt: 'Warga Desa Konoha mengantre di SPBU di tengah kabut tebal',
+  },
+]
+
+const faqs = [
+  {
+    q: 'Apakah udara kaleng benar-benar dari Desa Konoha?',
+    a: 'Ya — dikemas di Puncak Wisata, tepat sebelum kabut turun menutupi titik pengemasan. Setiap kaleng membawa label bergaransi desa.',
+  },
+  {
+    q: 'Bagaimana jika matahari tidak terbit saat tur?',
+    a: 'Peserta tetap menerima pengalaman berkabut bintang lima* dan voucher ulang tahun. Pengembalian dana tidak berlaku untuk cuaca.',
+  },
+  {
+    q: 'Kenapa rapat koordinasi harus di luar negeri?',
+    a: 'Karena di dalam negeri kabut sering menghalangi visibilitas rapat. Di luar negeri, jarak pandang mendukung produktivitas pengurus.',
+  },
+  {
+    q: 'Kapan Program Napas Bersama dimulai?',
+    a: 'Saat ini dalam tahap perencanaan. Estimasi pelaksanaan 2031, bergantung pada ketersediaan anggaran setelah pengembangan lini usaha lain.',
   },
 ]
 </script>
@@ -59,12 +112,38 @@ const services = [
             <div class="mt-4 font-mono font-bold text-(--ui-primary)">{{ service.price }}</div>
           </div>
         </div>
+
+        <img
+          :src="service.image"
+          :alt="service.imageAlt"
+          width="1600"
+          height="900"
+          class="mt-4 rounded-lg w-full h-auto ring-1 ring-(--ui-border)"
+        />
+
+        <dl class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+          <template v-for="spec in service.specs" :key="spec.k">
+            <dt class="text-(--ui-text-muted)">{{ spec.k }}</dt>
+            <dd class="font-mono text-right">{{ spec.v }}</dd>
+          </template>
+        </dl>
       </UCard>
     </div>
 
     <p class="mt-8 text-xs text-(--ui-text-muted)">
       *Kaleng daur ulang dari kaleng udara yang sudah habis. Daur ulang dilakukan
-      oleh pihak ketiga; jaminan mutul belum tersedia.
+      oleh pihak ketiga; jaminan mutul belum tersedia. Kandungan udara sesuai
+      pengukuran internal kami.
     </p>
+
+    <!-- FAQ -->
+    <section class="mt-16">
+      <h2 class="text-2xl font-bold mb-6">Pertanyaan yang Sering Diajukan</h2>
+      <UAccordion :items="faqs" class="max-w-3xl">
+        <template #body="{ item }">
+          <p class="text-(--ui-text-muted) px-1 pb-2">{{ item.a }}</p>
+        </template>
+      </UAccordion>
+    </section>
   </UContainer>
 </template>

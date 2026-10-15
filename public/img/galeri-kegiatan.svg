@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Kegiatan sosial PT KAW N yang sepi peserta">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8e2d2"/>
+      <stop offset="1" stop-color="#d0c8b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <!-- spanduk kegiatan -->
+  <rect x="300" y="80" width="1000" height="180" rx="12" fill="#f2ede0" stroke="#1f7a45" stroke-width="8"/>
+  <text x="800" y="150" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="46" fill="#134a2b">GOTONG ROYONG BERSIH UDARA</text>
+  <text x="800" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#1f7a45">PT KAW N × Pemerintah Desa Konoha</text>
+  <text x="800" y="238" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#8a8272">(kegiatan rencana — peserta: panitia)</text>
+  <!-- meja panjang dengan taplak -->
+  <rect x="250" y="560" width="1100" height="60" rx="8" fill="#4a3c28"/>
+  <rect x="250" y="545" width="1100" height="20" fill="#f2ede0"/>
+  <!-- kotak nasi & galon di meja -->
+  <g>
+    <rect x="400" y="510" width="80" height="36" rx="6" fill="#1f7a45"/>
+    <rect x="520" y="510" width="80" height="36" rx="6" fill="#1f7a45"/>
+    <rect x="1000" y="510" width="80" height="36" rx="6" fill="#1f7a45"/>
+    <rect x="1120" y="510" width="80" height="36" rx="6" fill="#1f7a45"/>
+    <!-- galon -->
+    <circle cx="760" cy="530" r="30" fill="#c9d8dd" stroke="#8a8272" stroke-width="3"/>
+    <circle cx="760" cy="530" r="10" fill="#8a8272"/>
+    <circle cx="880" cy="530" r="30" fill="#c9d8dd" stroke="#8a8272" stroke-width="3"/>
+  </g>
+  <!-- kursi kosong berjejer -->
+  <g fill="#3a3128">
+    <rect x="350" y="640" width="70" height="90" rx="8"/><rect x="470" y="640" width="70" height="90" rx="8"/>
+    <rect x="590" y="640" width="70" height="90" rx="8"/><rect x="710" y="640" width="70" height="90" rx="8"/>
+    <rect x="830" y="640" width="70" height="90" rx="8"/><rect x="950" y="640" width="70" height="90" rx="8"/>
+    <rect x="1070" y="640" width="70" height="90" rx="8"/><rect x="1190" y="640" width="70" height="90" rx="8"/>
+  </g>
+  <!-- dua panitia di ujung -->
+  <g fill="#2c2a26">
+    <g transform="translate(700 440)"><circle cx="18" cy="18" r="17"/><path d="M4 40 L32 40 L38 100 L-2 100 Z"/></g>
+    <g transform="translate(900 440)"><circle cx="18" cy="18" r="17"/><path d="M4 40 L32 40 L38 100 L-2 100 Z"/></g>
+  </g>
+  <!-- lantai -->
+  <rect y="730" width="1600" height="170" fill="#b8b0a0"/>
+  <text x="800" y="830" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8a8272">Kursi tersedia untuk semua warga* — kehadiran bersifat sukarela.</text>
+</svg>

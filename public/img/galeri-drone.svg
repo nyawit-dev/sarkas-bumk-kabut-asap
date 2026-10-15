@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Drone memantau sebaran kabut dari udara">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b89a6d"/>
+      <stop offset="1" stop-color="#8f7d5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- lanskap dari atas -->
+  <path d="M0 500 Q400 440 800 470 Q1200 500 1600 450 L1600 900 L0 900 Z" fill="#6e684f"/>
+  <!-- sawah terbagi -->
+  <g stroke="#5d5741" stroke-width="4" opacity=".6">
+    <path d="M-100 620 L1700 590"/><path d="M-100 720 L1700 686"/><path d="M-100 820 L1700 782"/>
+    <path d="M300 480 L260 900"/><path d="M800 490 L760 900"/><path d="M1300 470 L1260 900"/>
+  </g>
+  <!-- jalan desa -->
+  <path d="M0 850 Q400 800 800 830 Q1200 860 1600 800" fill="none" stroke="#57534c" stroke-width="20"/>
+  <!-- desa -->
+  <g fill="#6d5b45" opacity=".8">
+    <rect x="340" y="640" width="40" height="24"/><rect x="400" y="650" width="44" height="24"/>
+    <rect x="850" y="660" width="40" height="24"/><rect x="920" y="655" width="44" height="22"/>
+  </g>
+  <!-- drone -->
+  <g transform="translate(700 260)">
+    <!-- badan -->
+    <rect x="60" y="40" width="100" height="50" rx="12" fill="#3a3128"/>
+    <circle cx="110" cy="65" r="16" fill="#2c4a6b"/>
+    <circle cx="110" cy="65" r="8" fill="#5a7a9c"/>
+    <!-- kamera -->
+    <rect x="150" y="55" width="30" height="22" rx="4" fill="#565049"/>
+    <!-- lengan & baling-baling -->
+    <line x1="60" y1="50" x2="20" y2="20" stroke="#565049" stroke-width="8"/>
+    <line x1="160" y1="50" x2="200" y2="20" stroke="#565049" stroke-width="8"/>
+    <line x1="60" y1="80" x2="20" y2="110" stroke="#565049" stroke-width="8"/>
+    <line x1="160" y1="80" x2="200" y2="110" stroke="#565049" stroke-width="8"/>
+    <g fill="#8a8272" opacity=".6">
+      <ellipse cx="20" cy="20" rx="34" ry="5"/>
+      <ellipse cx="200" cy="20" rx="34" ry="5"/>
+      <ellipse cx="20" cy="110" rx="34" ry="5"/>
+      <ellipse cx="200" cy="110" rx="34" ry="5"/>
+    </g>
+    <!-- lampu -->
+    <circle cx="80" cy="42" r="4" fill="#b3352b"/>
+    <circle cx="140" cy="42" r="4" fill="#1f7a45"/>
+  </g>
+  <!-- bayangan drone di tanah -->
+  <ellipse cx="820" cy="760" rx="60" ry="14" fill="#000" opacity=".15"/>
+  <!-- garis pemantauan -->
+  <path d="M850 330 L950 500 L1200 640" fill="none" stroke="#e8dcb8" stroke-width="3" stroke-dasharray="8 8" opacity=".6"/>
+  <!-- kabut dari atas -->
+  <ellipse cx="500" cy="580" rx="420" ry="80" fill="#99866b" opacity=".45"/>
+  <ellipse cx="1200" cy="620" rx="460" ry="70" fill="#99866b" opacity=".4"/>
+</svg>

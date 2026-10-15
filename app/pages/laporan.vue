@@ -24,6 +24,8 @@ function auditColor(a: string) {
   if (a.includes('proses')) return 'warning'
   return 'neutral'
 }
+
+const base = '/sarkas-bumk-kabut-asap'
 </script>
 
 <template>
@@ -70,5 +72,60 @@ function auditColor(a: string) {
         <div class="text-sm text-(--ui-text-muted) mt-1">Audit independen selesai</div>
       </UCard>
     </div>
+
+    <!-- Grafik pertumbuhan -->
+    <UCard class="mt-8">
+      <h2 class="text-lg font-semibold mb-2">Tren Laba (Klaim Internal)</h2>
+      <img
+        :src="base + '/img/galeri-grafik-laba.svg'"
+        alt="Grafik batang pertumbuhan laba PT KAW N tahun 2021 sampai 2025"
+        width="1600"
+        height="900"
+        class="w-full rounded-lg ring-1 ring-(--ui-border)"
+      />
+      <p class="mt-2 text-xs text-(--ui-text-dimmed)">
+        Grafik disusun dari catatan internal Bagian Keuangan. Tidak ada verifikasi
+        pihak ketiga pada seluruh periode yang ditampilkan.
+      </p>
+    </UCard>
+
+    <!-- Dokumen & audit -->
+    <UCard class="mt-6">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <img
+          :src="base + '/img/galeri-dokumen.svg'"
+          alt="Tumpukan laporan tahunan dan berkas audit berstempel ditolak"
+          width="1600"
+          height="900"
+          class="w-full rounded-lg ring-1 ring-(--ui-border)"
+        />
+        <div>
+          <h3 class="font-semibold">Status Verifikasi</h3>
+          <p class="mt-2 text-(--ui-text-muted)">
+            Seluruh laporan tahunan tersedia dalam bentuk cetak di ruang keuangan.
+            Permintaan audit independen yang masuk sejauh ini berakhir dengan
+            stempel "DITOLAK" — dengan alasan data masih dalam proses digitalisasi.
+          </p>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex items-center gap-2">
+              <UIcon name="i-lucide-x-circle" class="size-4 text-(--ui-error)" />
+              Audit 2021 — ditolak (auditor belum terverifikasi)
+            </li>
+            <li class="flex items-center gap-2">
+              <UIcon name="i-lucide-x-circle" class="size-4 text-(--ui-error)" />
+              Audit 2022 — ditolak (data belum digital)
+            </li>
+            <li class="flex items-center gap-2">
+              <UIcon name="i-lucide-clock" class="size-4 text-(--ui-warning)" />
+              Audit 2023 — dalam proses penjadwalan ulang
+            </li>
+            <li class="flex items-center gap-2">
+              <UIcon name="i-lucide-minus-circle" class="size-4 text-(--ui-text-dimmed)" />
+              Audit 2025 — belum diajukan
+            </li>
+          </ul>
+        </div>
+      </div>
+    </UCard>
   </UContainer>
 </template>

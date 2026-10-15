@@ -1,8 +1,10 @@
 <script setup lang="ts">
 const navItems = [
   { label: 'Beranda', to: '/', exact: true },
+  { label: 'Tentang', to: '/tentang' },
   { label: 'Layanan', to: '/layanan' },
   { label: 'Laporan Kinerja', to: '/laporan' },
+  { label: 'Galeri', to: '/galeri' },
   { label: 'Generator', to: '/generator' },
   { label: 'Legal', to: '/legal' },
 ]

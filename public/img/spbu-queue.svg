@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Antrean panjang kendaraan di SPBU Desa Konoha di bawah kabut">
+  <defs>
+    <linearGradient id="asky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9ab7e"/>
+      <stop offset="1" stop-color="#b39a70"/>
+    </linearGradient>
+    <linearGradient id="ahaze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d6a50" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#5e503d" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57534c"/>
+      <stop offset="1" stop-color="#3c3934"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#asky)"/>
+  <!-- siluet pohon & bangunan samar -->
+  <g opacity=".35" fill="#6f6149">
+    <rect x="80" y="480" width="220" height="140"/>
+    <rect x="1180" y="500" width="180" height="120"/>
+    <circle cx="120" cy="470" r="46"/><circle cx="180" cy="480" r="38"/><circle cx="1480" cy="490" r="42"/><circle cx="1420" cy="500" r="34"/>
+  </g>
+  <!-- tiang SPBU -->
+  <rect x="760" y="330" width="14" height="290" fill="#565049"/>
+  <rect x="700" y="300" width="180" height="52" rx="8" fill="#1f7a45"/>
+  <text x="790" y="335" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="26" fill="#f2ede0">SPBU</text>
+
+  <!-- jalan -->
+  <path d="M0 620 L1600 620 L1600 900 L0 900 Z" fill="url(#road)"/>
+  <line x1="0" y1="790" x2="1600" y2="790" stroke="#d8d2c4" stroke-width="6" stroke-dasharray="60 44" opacity=".7"/>
+
+  <!-- antrean motor & mobil -->
+  <g>
+    <!-- mobil 1 (depan) -->
+    <g transform="translate(980 640)">
+      <path d="M0 90 L10 40 Q14 22 40 20 L120 18 Q150 18 158 44 L166 90 Z" fill="#8a3b32"/>
+      <path d="M28 44 L44 26 L104 24 L118 44 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="36" cy="94" r="14" fill="#2c2a26"/><circle cx="132" cy="94" r="14" fill="#2c2a26"/>
+      <rect x="150" y="52" width="12" height="10" rx="3" fill="#e8d9a0"/>
+    </g>
+    <!-- mobil 2 -->
+    <g transform="translate(700 668)">
+      <path d="M0 78 L8 36 Q12 20 36 18 L108 16 Q134 16 142 40 L150 78 Z" fill="#5b6e8c"/>
+      <path d="M26 40 L40 24 L94 22 L106 40 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="32" cy="82" r="12" fill="#2c2a26"/><circle cx="118" cy="82" r="12" fill="#2c2a26"/>
+      <rect x="136" y="46" width="10" height="9" rx="3" fill="#e8d9a0"/>
+    </g>
+    <!-- motor 1 -->
+    <g transform="translate(480 700)">
+      <circle cx="18" cy="66" r="16" fill="#2c2a26"/><circle cx="96" cy="66" r="16" fill="#2c2a26"/>
+      <path d="M20 60 L60 52 L86 60 L92 44 L74 38 L34 44 Z" fill="#3e3a34"/>
+      <rect x="52" y="30" width="12" height="22" rx="5" fill="#3e3a34"/>
+      <circle cx="92" cy="40" r="6" fill="#e8d9a0"/>
+    </g>
+    <!-- motor 2 -->
+    <g transform="translate(280 712)">
+      <circle cx="16" cy="60" r="14" fill="#2c2a26"/><circle cx="86" cy="60" r="14" fill="#2c2a26"/>
+      <path d="M18 54 L54 47 L78 54 L84 40 L66 34 L30 40 Z" fill="#5c564c"/>
+      <rect x="46" y="26" width="11" height="20" rx="5" fill="#5c564c"/>
+      <circle cx="84" cy="36" r="5" fill="#e8d9a0"/>
+    </g>
+    <!-- siluet orang mengantre -->
+    <g fill="#4a443b" opacity=".8">
+      <g transform="translate(1240 700)"><circle cx="12" cy="14" r="10"/><path d="M4 26 L20 26 L24 78 L0 78 Z"/></g>
+      <g transform="translate(1300 706)"><circle cx="12" cy="14" r="10"/><path d="M4 26 L20 26 L24 78 L0 78 Z"/></g>
+      <g transform="translate(1360 712)"><circle cx="12" cy="14" r="10"/><path d="M4 26 L20 26 L24 78 L0 78 Z"/></g>
+    </g>
+  </g>
+
+  <!-- kabut depan -->
+  <rect y="560" width="1600" height="340" fill="url(#ahaze)"/>
+  <ellipse cx="500" cy="640" rx="640" ry="70" fill="#8a765a" opacity=".35"/>
+  <ellipse cx="1200" cy="680" rx="520" ry="60" fill="#8a765a" opacity=".3"/>
+</svg>

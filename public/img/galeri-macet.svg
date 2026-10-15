@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Lalu lintas macet parah di jalan desa diterja kabut">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b89a6d"/>
+      <stop offset="1" stop-color="#8f7d5e"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57534c"/>
+      <stop offset="1" stop-color="#3c3934"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- bangunan samar -->
+  <g fill="#6f6149" opacity=".35">
+    <rect x="60" y="440" width="260" height="140"/>
+    <rect x="1280" y="460" width="240" height="120"/>
+    <rect x="150" y="400" width="60" height="40"/>
+    <rect x="1340" y="420" width="60" height="40"/>
+  </g>
+  <!-- jalan raya -->
+  <rect y="580" width="1600" height="320" fill="url(#road)"/>
+  <!-- marka tengah -->
+  <line x1="0" y1="760" x2="1600" y2="760" stroke="#d8d2c4" stroke-width="7" stroke-dasharray="70 50" opacity=".5"/>
+  <!-- deretan kendaraan berhenti -->
+  <g>
+    <!-- truk panjang di kiri -->
+    <g transform="translate(60 560)">
+      <rect x="40" y="40" width="300" height="110" rx="6" fill="#8a8272"/>
+      <path d="M-40 150 L-40 60 Q-40 30 -10 28 L40 28 L40 150 Z" fill="#5a5346"/>
+      <rect x="-30" y="40" width="30" height="26" rx="3" fill="#c9c2b4" opacity=".8"/>
+      <circle cx="0" cy="156" r="20" fill="#2c2a26"/><circle cx="300" cy="156" r="20" fill="#2c2a26"/>
+    </g>
+    <!-- mobil-mobil -->
+    <g transform="translate(520 590)">
+      <path d="M0 90 L10 40 Q14 22 40 20 L110 18 Q138 18 146 42 L154 90 Z" fill="#3e5a7a"/>
+      <path d="M26 42 L40 26 L98 24 L110 42 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="32" cy="94" r="13" fill="#2c2a26"/><circle cx="124" cy="94" r="13" fill="#2c2a26"/>
+    </g>
+    <g transform="translate(740 596)">
+      <path d="M0 84 L8 38 Q12 20 36 18 L102 16 Q128 16 136 40 L144 84 Z" fill="#a8563c"/>
+      <path d="M24 40 L38 24 L92 22 L102 40 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="30" cy="88" r="12" fill="#2c2a26"/><circle cx="116" cy="88" r="12" fill="#2c2a26"/>
+    </g>
+    <g transform="translate(950 602)">
+      <path d="M0 78 L8 34 Q12 18 34 16 L96 14 Q120 14 128 36 L136 78 Z" fill="#5c6e4a"/>
+      <path d="M22 36 L34 22 L86 20 L96 36 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="28" cy="82" r="11" fill="#2c2a26"/><circle cx="108" cy="82" r="11" fill="#2c2a26"/>
+    </g>
+    <g transform="translate(1150 606)">
+      <path d="M0 74 L8 32 Q12 16 32 14 L92 12 Q114 12 122 34 L130 74 Z" fill="#6b5a8c"/>
+      <path d="M22 34 L32 20 L82 18 L92 34 Z" fill="#c9c2b4" opacity=".85"/>
+      <circle cx="26" cy="78" r="11" fill="#2c2a26"/><circle cx="104" cy="78" r="11" fill="#2c2a26"/>
+    </g>
+    <!-- motor antre -->
+    <g transform="translate(1330 620)">
+      <circle cx="14" cy="56" r="12" fill="#2c2a26"/><circle cx="76" cy="56" r="12" fill="#2c2a26"/>
+      <path d="M16 50 L52 44 L70 50 L76 38 L60 32 L28 38 Z" fill="#3e3a34"/>
+    </g>
+  </g>
+  <!-- orang berdiri di pinggir jalan -->
+  <g fill="#4a443b" opacity=".8">
+    <g transform="translate(640 610)"><circle cx="10" cy="12" r="9"/><path d="M3 24 L17 24 L20 66 L0 66 Z"/></g>
+    <g transform="translate(690 614)"><circle cx="10" cy="12" r="9"/><path d="M3 24 L17 24 L20 66 L0 66 Z"/></g>
+  </g>
+  <!-- kabut -->
+  <rect y="480" width="1600" height="420" fill="#7d6a50" opacity=".4"/>
+  <ellipse cx="800" cy="600" rx="900" ry="60" fill="#99866b" opacity=".45"/>
+</svg>

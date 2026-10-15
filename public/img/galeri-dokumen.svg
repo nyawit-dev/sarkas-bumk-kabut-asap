@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Tumpukan dokumen laporan tahunan dan berkas audit di meja kerja">
+  <rect width="1600" height="900" fill="#c4bda9"/>
+  <!-- meja kayu -->
+  <rect y="500" width="1600" height="400" fill="#9c7f5c"/>
+  <g stroke="#87693f" stroke-width="3" opacity=".5">
+    <path d="M0 620 L1600 620"/><path d="M0 740 L1600 740"/><path d="M0 860 L1600 860"/>
+  </g>
+  <!-- tumpukan dokumen besar -->
+  <g transform="translate(300 260)">
+    <rect x="20" y="200" width="520" height="300" fill="#f7f4ea" stroke="#8a8272" stroke-width="2"/>
+    <rect x="30" y="190" width="520" height="300" fill="#fbf9f2" stroke="#8a8272" stroke-width="2"/>
+    <rect x="40" y="180" width="520" height="300" fill="#f2ede0" stroke="#8a8272" stroke-width="2"/>
+    <!-- judul di dokumen teratas -->
+    <text x="300" y="240" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="34" fill="#134a2b">LAPORAN TAHUNAN</text>
+    <text x="300" y="275" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#5a5346">PT KAW N — Tahun 2025</text>
+    <line x1="100" y1="310" x2="500" y2="310" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="100" y1="340" x2="500" y2="340" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="100" y1="370" x2="460" y2="370" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="100" y1="400" x2="500" y2="400" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="100" y1="430" x2="380" y2="430" stroke="#c4bda9" stroke-width="4"/>
+    <!-- lambang -->
+    <circle cx="490" cy="440" r="28" fill="#1f7a45"/>
+    <circle cx="490" cy="436" r="11" fill="#e0a83c"/>
+  </g>
+  <!-- berkas audit dengan stempel DITOLAK -->
+  <g transform="translate(950 480) rotate(-6)">
+    <rect x="0" y="0" width="360" height="240" fill="#fbf9f2" stroke="#8a8272" stroke-width="2"/>
+    <text x="180" y="50" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="24" fill="#134a2b">PERMINTAAN AUDIT</text>
+    <line x1="40" y1="80" x2="320" y2="80" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="40" y1="108" x2="320" y2="108" stroke="#c4bda9" stroke-width="4"/>
+    <line x1="40" y1="136" x2="280" y2="136" stroke="#c4bda9" stroke-width="4"/>
+    <!-- stempel -->
+    <g transform="translate(180 175) rotate(-12)">
+      <rect x="-110" y="-24" width="220" height="48" rx="6" fill="none" stroke="#b3352b" stroke-width="5"/>
+      <text x="0" y="9" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="30" fill="#b3352b" letter-spacing="3">DITOLAK</text>
+    </g>
+  </g>
+  <!-- kalkulator -->
+  <g transform="translate(1240 620)">
+    <rect x="0" y="0" width="180" height="130" rx="12" fill="#3a3128"/>
+    <rect x="16" y="14" width="148" height="34" rx="4" fill="#cfe3d4"/>
+    <text x="90" y="40" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="22" fill="#134a2b">31.4 M</text>
+    <g fill="#8a8272">
+      <rect x="16" y="60" width="32" height="20" rx="3"/><rect x="56" y="60" width="32" height="20" rx="3"/><rect x="96" y="60" width="32" height="20" rx="3"/><rect x="136" y="60" width="28" height="20" rx="3"/>
+      <rect x="16" y="88" width="32" height="20" rx="3"/><rect x="56" y="88" width="32" height="20" rx="3"/><rect x="96" y="88" width="32" height="20" rx="3"/><rect x="136" y="88" width="28" height="20" rx="3" fill="#1f7a45"/>
+    </g>
+  </g>
+  <!-- pulpen -->
+  <g transform="translate(1100 780) rotate(12)">
+    <rect x="0" y="0" width="220" height="14" rx="7" fill="#1f7a45"/>
+    <polygon points="220,0 240,7 220,14" fill="#c9b184"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Ruang rapat mewah di luar negeri dengan pemandangan kota">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e4d8"/>
+      <stop offset="1" stop-color="#d8d1c2"/>
+    </linearGradient>
+    <linearGradient id="view" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fc4d8"/>
+      <stop offset="1" stop-color="#c9d8dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <!-- jendela besar pemandangan kota -->
+  <rect x="180" y="120" width="700" height="460" fill="url(#view)"/>
+  <g fill="#a8bcc4" opacity=".8">
+    <rect x="220" y="300" width="60" height="280"/><rect x="300" y="250" width="50" height="330"/>
+    <rect x="370" y="330" width="70" height="250"/><rect x="460" y="280" width="55" height="300"/>
+    <rect x="535" y="360" width="65" height="220"/><rect x="620" y="310" width="48" height="270"/>
+    <rect x="690" y="270" width="58" height="310"/><rect x="770" y="340" width="66" height="240"/>
+  </g>
+  <rect x="180" y="120" width="700" height="460" fill="none" stroke="#8a8272" stroke-width="10"/>
+  <line x1="530" y1="120" x2="530" y2="580" stroke="#8a8272" stroke-width="6"/>
+  <!-- matahari cerah di luar (kontras dengan kabut desa) -->
+  <circle cx="320" cy="190" r="36" fill="#f0d9a0"/>
+  <!-- lantai kayu -->
+  <rect y="580" width="1600" height="320" fill="#9c7f5c"/>
+  <g stroke="#87693f" stroke-width="2" opacity=".5">
+    <path d="M0 660 L1600 660"/><path d="M0 740 L1600 740"/><path d="M0 820 L1600 820"/>
+  </g>
+  <!-- meja rapat panjang -->
+  <rect x="200" y="640" width="1200" height="80" rx="8" fill="#4a3c28"/>
+  <rect x="200" y="640" width="1200" height="14" rx="7" fill="#6b5738"/>
+  <!-- kursi -->
+  <g fill="#3a3roll">
+  </g>
+  <g fill="#3a3128">
+    <rect x="240" y="740" width="90" height="110" rx="8"/><rect x="420" y="740" width="90" height="110" rx="8"/>
+    <rect x="600" y="740" width="90" height="110" rx="8"/><rect x="780" y="740" width="90" height="110" rx="8"/>
+    <rect x="960" y="740" width="90" height="110" rx="8"/><rect x="1140" y="740" width="90" height="110" rx="8"/>
+    <rect x="240" y="560" width="90" height="80" rx="8"/><rect x="600" y="560" width="90" height="80" rx="8"/>
+    <rect x="960" y="560" width="90" height="80" rx="8"/>
+  </g>
+  <!-- laptop & dokumen di meja -->
+  <g>
+    <rect x="480" y="612" width="70" height="8" fill="#2c2a26"/>
+    <path d="M490 612 L500 578 L540 578 L550 612 Z" fill="#565049"/>
+    <rect x="820" y="600" width="90" height="10" fill="#f2ede0"/>
+    <rect x="1060" y="600" width="90" height="10" fill="#f2ede0"/>
+  </g>
+  <!-- lampu gantung -->
+  <g stroke="#8a8272" stroke-width="3">
+    <line x1="500" y1="0" x2="500" y2="60"/><line x1="800" y1="0" x2="800" y2="60"/><line x1="1100" y1="0" x2="1100" y2="60"/>
+  </g>
+  <circle cx="500" cy="72" r="16" fill="#e8dcb8"/><circle cx="800" cy="72" r="16" fill="#e8dcb8"/><circle cx="1100" cy="72" r="16" fill="#e8dcb8"/>
+</svg>
