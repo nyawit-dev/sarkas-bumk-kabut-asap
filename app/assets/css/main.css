@@ -2,50 +2,276 @@
 @import "@nuxt/ui";
 
 @font-face {
-  font-family: 'Nunito';
-  src: url('/sarkas-bumk-kabut-asap/fonts/nunito-variable-latin.woff2') format('woff2');
+  font-family: "Nunito";
+  src: url("/sarkas-bumk-kabut-asap/fonts/nunito-variable-latin.woff2") format("woff2");
   font-weight: 100 1000;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-400.woff2') format('woff2');
+  font-family: "IBM Plex Mono";
+  src: url("/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-400.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-500.woff2') format('woff2');
+  font-family: "IBM Plex Mono";
+  src: url("/sarkas-bumk-kabut-asap/fonts/ibm-plex-mono-500.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 
 @theme {
-  --font-sans: 'Nunito', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: "Nunito", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
-/* Kabut: situs ini soal udara yang tampak bersih tapi berwarna. Gradien
-   asap lembut, bukan hujan abu pekat — satire yang terlalu gelap berhenti
-   lucu dan mulai terlihat seperti tuduhan. */
-.sarkas-hero {
+/* ── Layout corporate ──────────────────────────────────────────────── */
+
+:root {
+  --brand-0: 34 10% 95%;
+  --brand-90: 34 22% 82%;
+  --brand-1: 35 18% 12%;
+  --ink: 40 8% 12%;
+  --ink-soft: 40 5% 22%;
+  --muted: 40 3% 46%;
+  --line: 40 2% 88%;
+  --bg: 0 0% 100%;
+  --danger: 40 60% 52%;
+}
+
+.deck {
+  --u-border: color-mix(in oklab, var(--line) 60%, transparent);
+  --u-bg-accent: color-mix(in oklab, var(--brand-0) 70%, var(--bg));
+}
+
+/* Helvetica-style corporate base */
+.deck {
+  font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+}
+
+.deck h1, .deck h2, .deck h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.deck h1 {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.deck h2 {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.deck h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.deck .mono {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+}
+
+/* Header jam korporat */
+.header-clock {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+/* ── Strip statistik self-reported ──────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  border: 1px solid var(--u-border);
+  border-radius: 8px;
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+}
+
+.stats-grid dt {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stats-grid dd {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* ── Badge sertifikasi ──────────────────────────────────────────────── */
+.cert-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--u-border);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+}
+
+.cert-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--brand-90);
+}
+
+/* ── Badge waktu operasi ───────────────────────────────────────────── */
+.op-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--brand-1);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.3rem;
+}
+
+/* ── Stat strip alternatif (testimony banner) ───────────────────────── */
+.note-banner {
+  border: 1px dashed var(--u-border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: color-mix(in oklab, var(--bg) 90%, transparent);
+}
+
+/* ── Table sertifikasi ringan ───────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--u-border);
+}
+
+th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+/* ── Timeline ───────────────────────────────────────────────────────── */
+.timeline {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--brand-90), var(--line));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 14px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--brand-90);
+  border: 3px solid var(--bg);
+}
+
+.timeline-year {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--brand-90);
+  font-weight: 700;
+}
+
+.timeline-text {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+/* ── Hero clean corporate ──────────────────────────────────────────── */
+.hero-clean {
+  padding: 4rem 1.5rem 3rem;
+  border-bottom: 1px solid var(--u-border);
   background:
-    linear-gradient(
-      180deg,
-      color-mix(in oklab, var(--ui-primary) 12%, var(--ui-bg)) 0%,
-      var(--ui-bg) 100%
-    ),
-    radial-gradient(
-      120% 80% at 70% 0%,
-      color-mix(in oklab, var(--ui-primary) 8%, transparent),
-      transparent 60%
-    );
+    linear-gradient(180deg, color-mix(in oklab, var(--ink) 3%, transparent) 0%, transparent 40%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
 }
 
-/* Pita statistik: angka self-reported, bukan fakta tersumber. Diberi
-   garis bawah putus-putus supaya terbaca sebagai klaim, bukan data. */
-.sarkas-claim {
-  border-bottom: 1px dashed color-mix(in oklab, var(--ui-text-muted) 50%, transparent);
+.hero-clean h1 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+/* ── Condition-box (testimony) ──────────────────────────────────────── */
+.condition-box {
+  border: 1px solid var(--u-border);
+  border-left: 3px solid var(--brand-90);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+}
+
+/* ── Typography topline (clean) ────────────────────────────────────── */
+.topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.topline .kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-90);
+  font-weight: 800;
+}
+
+/* ── Responsive trim ────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .stats-grid dd { font-size: 1.3rem; }
+  .cert-badge { font-size: 0.7rem; padding: 0.25rem 0.5rem; }
+  .timeline::before { left: 20px; }
+}
+
+/* ── Content width container ───────────────────────────────────────── */
+.container-max {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
